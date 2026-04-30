@@ -1,0 +1,13 @@
+======================================================================
+AUTOMATED QC REPORT - HUMAN REVIEW REQUIRED
+======================================================================
+Overall severity:        LOW
+Ready for human review:  True
+Citation coverage:       98.5%
+
+UNCITED QUANTITATIVE CLAIMS (1 flagged, top 5 shown):
+  - ...rst nine months of FY26 NVIDIA returned $37.0B via buybacks and dividends, with $62.2B...
+
+======================================================================
+Human reviewer: please verify all flagged items before sign-off.
+======================================================================

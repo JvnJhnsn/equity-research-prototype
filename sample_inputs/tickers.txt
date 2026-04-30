@@ -1,0 +1,9 @@
+# Sample tickers supported out of the box (CIKs pre-loaded).
+# Add more by extending data_ingestion.SECClient.CIK_MAP.
+NVDA
+AAPL
+MSFT
+GOOGL
+AMZN
+META
+TSLA

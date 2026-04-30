@@ -1,0 +1,95 @@
+[
+  {
+    "source_id": "SRC-1",
+    "source_type": "8-K",
+    "title": "NVIDIA Q4 FY26 Earnings Press Release",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000019/q4fy26pr.htm",
+    "publication_date": "2026-02-25",
+    "content": "(Q4 FY26 press release - revenue $68.1B, FY26 revenue $215.9B)",
+    "metadata": {}
+  },
+  {
+    "source_id": "SRC-2",
+    "source_type": "8-K",
+    "title": "NVIDIA Q4 FY26 CFO Commentary",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000019/q4fy26cfocommentary.htm",
+    "publication_date": "2026-02-25",
+    "content": "(Q4 FY26 CFO commentary - segment breakdown, Data Center $62.3B)",
+    "metadata": {}
+  },
+  {
+    "source_id": "SRC-3",
+    "source_type": "8-K",
+    "title": "NVIDIA Q3 FY26 Earnings Press Release",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2026",
+    "publication_date": "2025-11-19",
+    "content": "(Q3 FY26 press release - revenue $57.0B, Blackwell sales)",
+    "metadata": {}
+  },
+  {
+    "source_id": "SRC-4",
+    "source_type": "8-K",
+    "title": "NVIDIA Q2 FY26 Earnings Press Release",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581025000207/q2fy26pr.htm",
+    "publication_date": "2025-08-27",
+    "content": "(Q2 FY26 press release - revenue $46.7B)",
+    "metadata": {}
+  },
+  {
+    "source_id": "SRC-5",
+    "source_type": "8-K",
+    "title": "NVIDIA Q1 FY26 Earnings Press Release",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581025000115/q1fy26pr.htm",
+    "publication_date": "2025-05-28",
+    "content": "(Q1 FY26 press release - revenue $44.1B, gross margin 60.5% impacted by H20 export charge)",
+    "metadata": {}
+  },
+  {
+    "source_id": "SRC-6",
+    "source_type": "news",
+    "title": "Fortune - NVIDIA Q4 FY26 results coverage",
+    "url": "https://fortune.com/2026/02/25/nvidia-nvda-earnings-q4-results-jensen-huang/",
+    "publication_date": "2026-02-25",
+    "content": "(Fortune - guidance $78B for Q1 FY27, Intel investment gains)",
+    "metadata": {}
+  },
+  {
+    "source_id": "SRC-7",
+    "source_type": "news",
+    "title": "CNBC - NVIDIA Q4 FY26 earnings analysis",
+    "url": "https://www.cnbc.com/2026/02/25/nvidia-nvda-earnings-report-q4-2026.html",
+    "publication_date": "2026-02-25",
+    "content": "(CNBC - 91% revenue from data center, EPS beat $1.62 vs $1.53 est)",
+    "metadata": {}
+  },
+  {
+    "source_id": "SRC-8",
+    "source_type": "market_data",
+    "title": "NVDA market data snapshot (Yahoo Finance)",
+    "url": "https://finance.yahoo.com/quote/NVDA/",
+    "publication_date": "2026-04-29",
+    "content": "{\"current_price\": 209.57, \"market_cap\": 5150000000000, \"pe_ttm\": 42.73, \"pe_forward\": 25.75, \"52w_high\": 216.83, \"52w_low\": 104.08, \"beta\": 2.34, \"1y_return_pct\": 92.0}",
+    "metadata": {
+      "current_price": 209.57,
+      "market_cap": 5150000000000,
+      "pe_ttm": 42.73,
+      "pe_forward": 25.75,
+      "52w_high": 216.83,
+      "52w_low": 104.08,
+      "beta": 2.34,
+      "1y_return_pct": 92.0,
+      "company_name": "NVIDIA Corporation",
+      "sector": "Technology",
+      "industry": "Semiconductors"
+    }
+  },
+  {
+    "source_id": "SRC-9",
+    "source_type": "news",
+    "title": "Yahoo Finance - NVDA April 2026 price action",
+    "url": "https://finance.yahoo.com/quote/NVDA/",
+    "publication_date": "2026-04-29",
+    "content": "(Yahoo - shares up 20% in April, 92% YoY, Q1 FY27 earnings May 20)",
+    "metadata": {}
+  }
+]
