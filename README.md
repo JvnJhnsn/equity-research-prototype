@@ -1,6 +1,6 @@
 # Automated Equity Research Report Writer
 
-**Tsunami Advisors AI Intern Case Study** · **Author:** Jovan Johansen · **Submission:** April 30, 2026
+**Author:** Jovan Mikael Johansen· 
 
 A prototype that turns a single ticker into a structured, fully-cited equity research report using a Generative-AI-first workflow. Built in Python with Anthropic Claude as the reasoning engine, SEC EDGAR + Yahoo Finance for source data, and `reportlab` for the final PDF.
 
@@ -140,8 +140,6 @@ Streamlit Community Cloud lets you deploy this app for free in about three minut
    ANTHROPIC_API_KEY = "sk-ant-your-key-here"
    ```
 5. Click **Deploy**. You get a public URL like `https://your-app.streamlit.app`.
-
-Send Neil that link and he can try the live pipeline himself with no setup at all.
 
 ---
 
