@@ -140,38 +140,4 @@ Streamlit Community Cloud lets you deploy this app for free in about three minut
    ANTHROPIC_API_KEY = "sk-ant-your-key-here"
    ```
 5. Click **Deploy**. You get a public URL like `https://your-app.streamlit.app`.
-
----
-
-## Design choices worth calling out
-
-**Why two-stage extract→draft.** A single mega-prompt with all filings concatenated produces fluent prose but contradicts itself across sections and cites poorly. Splitting into (a) per-document JSON extraction and (b) section drafting from the structured insights forces the drafter to anchor in pre-validated facts.
-
-**Why one LLM call per section.** Smaller context windows produce sharper, more cite-able output than a single mega-prompt. Each section also has its own prompt with section-specific guardrails and word counts.
-
-**Why a separate review LLM call.** Asking the same model to self-correct in one pass is unreliable. A clean, cold (`temperature=0`) review pass that is told to *flag, not fix* surfaces issues that the drafter missed without silently rewriting facts.
-
-**Why the regex citation-coverage check.** The LLM review is good but expensive and non-deterministic. A regex pass for `[SRC-X]` proximity to financial-looking numbers is essentially free, fully deterministic, and catches the same class of issue most of the time.
-
-**Why I labeled outputs "research support, not advice."** Compliance-by-design. The model is good enough to produce something that *looks* publishable, which is exactly when the disclaimers matter most.
-
----
-
-## Limitations (full list in `docs/build_documentation.pdf`)
-
-- 18K-character cap per filing per call truncates risk-factor and exhibit detail in long 10-Ks. Production fix: chunked retrieval.
-- `yfinance` is unofficial and rate-limited. Production: Bloomberg / Refinitiv.
-- No real-time event handling. If material news breaks during a run, the report doesn't pick it up.
-- English-language US-listed equities only. HK / Indonesian markets need localized prompts and source hookups.
-
----
-
-## Reflection (1 paragraph)
-
-The two-stage extract→draft architecture was the single biggest quality unlock — citation coverage rose from ~50% to >95% by forcing the LLM to first produce structured JSON insights from each source and then draft from those structured facts rather than from raw filings. The biggest weakness I couldn't fully solve was forward-looking commentary: even with a careful prompt asking for monitorable triggers, the model occasionally drifted toward implicit recommendations, which is why the human-review layer is non-negotiable rather than a nice-to-have. In a v2 I would replace the character-cap ingestion with chunked embedding-based retrieval, add a peer-comparison module, swap the single review pass for a bull-vs-bear debate pattern, and separate the recommendation framing from the drafter so the human picks POSITIVE / WATCHLIST / NEUTRAL / CAUTIOUS *before* the thesis is drafted (which avoids the AI choosing its own framing).
-
----
-
-## Disclaimer
-
-This prototype is for educational and research-support purposes. Outputs are not investment advice, not a solicitation, and not a guarantee of accuracy. All recommendations require human analyst review and sign-off before use.
+   
